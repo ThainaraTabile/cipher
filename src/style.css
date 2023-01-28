@@ -24,7 +24,7 @@ nav a:hover {
     color:blue;
 }
 body {
-    background-image: linear-gradient(rgb(2, 14, 27),rgb(1, 16, 31),rgb(5, 29, 56),rgb(6, 39, 74),rgb(16, 68, 116),rgb(39, 101, 155));
+    background-image: linear-gradient(rgb(2, 14, 27),rgb(1, 16, 31),rgb(82, 129, 182),rgb(98, 130, 160),rgb(39, 101, 155),rgb(49, 81, 116),rgb(16, 68, 116),rgb(39, 101, 155)); */
 }
 .principal {
     padding: 20px;
@@ -71,6 +71,15 @@ form label {
     text-align: center;
     margin: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#escolha {
+    font-size: 12px;
+    font-weight: bold;
+}
+select {
+    background-color: rgb(5, 29, 56);
+   color:aliceblue; 
 }
 .produtos {
     width: 1030px;

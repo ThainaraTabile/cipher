@@ -6,20 +6,20 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="logo-cripto.png" type="image/x-icon" />
-  <script src="index.js" type="module"></script>
 </head>
 
+<header>
+  <img src="logo.png" alt="Logo da Empresa" width="100%" height="230px" />
+  <nav>
+    <ul>
+      <li> <a href="#"> Contato</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Pagamento</a></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
-  <header>
-    <img src="logo.png" alt="Logo da Empresa" width="100%" height="230px" />
-    <nav>
-      <ul>
-        <li> <a href="#"> Contato</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Pagamento</a></li>
-      </ul>
-    </nav>
-  </header>
   <div class="principal">
     <h1>Criptografia e Decriptografia Online</h1>
     <p> Se você deseja enviar informações confidenciais através da internet, como senhas e outros dados sensíveis,
@@ -35,31 +35,53 @@
     <img src="fluxocripto.png" alt="Fluxo da criptografia" width="500px" />
   </div>
   <main>
-    <form class="produtos">
+    <form class="produtos" onsubmit="return false" id="form-adiciona">
       <div>
-        <img src="cadeado.png" width="25%" alt="cadeado" class="icones"/>
+        <img src="cadeado.png" width="25%" alt="cadeado" class="icones" />
         <h3>Criptografia</h3>
-        <label for="texto-para-criptofragar">  Digite o texto para criptografar </label>
-        <textarea cols="40%" rows="10%" id="texto-para-criptofragar" class="texto"> </textarea>
-        <input type="submit" value="Enviar" class="enviar"/>
+        <label for="texto-para-criptofragar"> Digite o texto para criptografar </label>
+        <label id="escolhaC">Escolha o deslocamento indicando quantas posições você deseja que a cifra desloque:</label>
+        <select id="deslocaCifra" required="required">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+        </select>
+        <br> <br>
+        <textarea cols="40%" rows="10%" id="textoParaCriptografar" class="texto"
+          name="textoParaCriptografar"> </textarea>
+        <input type="submit" id="cifrar" class="enviar" />
         <label for="texto-criptografado">Texto criptografado</label>
-        <textarea  cols="40%" rows="10%" id="texto-criptografado" class="texto"> </textarea>
+        <textarea cols="40%" rows="10%" id="textoCriptografado" class="texto"> </textarea>
+        <input type="button" class="enviar" value="Limpar" onClick="window.location.reload()">
+        <button id="copiarC" class="enviar">Copiar</button>
       </div>
       <div>
-        <img src="chave.png" width="25%" alt="chave" class="icones"/>
+        <img src="chave.png" width="25%" alt="chave" class="icones" />
         <h3>Descriptografia</h3>
         <label for="texto-para-descriptografar"> Digite o texto criptografado </label>
-        <textarea cols="40%" rows="10%" id="texto-para-descriptografar" class="texto"> </textarea>
-        <input type="submit" value="Enviar" class="enviar" />
-        <label for="texto-descriptografado"> Texto descriptografado </label> 
-        <textarea cols="40%" rows="10%" id="texto-descriptografado" class="texto"> </textarea>
+        <label id="escolhaD">Escolha o deslocamento indicando quantas posições você deseja que a cifra desloque:</label>
+        <select id="deslocaDecifra" required="required">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+        </select>
+        <br> <br>
+        <textarea cols="40%" rows="10%" id="textoParaDescriptografar" class="texto"
+          name="textoParaDescriptografar"> </textarea>
+        <input type="submit" id="decifrar" class="enviar" />
+        <label for="texto-descriptografado"> Texto descriptografado </label>
+        <textarea cols="40%" rows="10%" id="textoDescriptografado" class="texto"
+          name="textoDescriptografado"> </textarea>
+        <input type="button" class="enviar" value="Limpar" onClick="window.location.reload()">
+        <button id="copiarD" class="enviar" name="copiaD">Copiar</button>
       </div>
-  </form>
+    </form>
   </main>
   <footer>
     <img src="logo-cripto.png" width="100px" alt="Logo da empresa">
     <p class="copyright">Copyright Caesar Cipher - 2023</p>
   </footer>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
