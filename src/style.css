@@ -1,138 +1,164 @@
-
-nav {
-    position: absolute;
-	top: 110px;
-	right: 10px;
-}
-nav li {
-display: inline;
-margin: 0 0 0 15px;
-padding: 05px 15px;
-background:rgb(39, 101, 155);
-border-radius: 10px;
-border-style: dotted;
-border-color: white;
-}
-nav a {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 15px;
-    color:aliceblue;
-}
-nav a:hover {
-    color:blue;
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
 }
 body {
-    background-image: linear-gradient(rgb(2, 14, 27),rgb(1, 16, 31),rgb(82, 129, 182),rgb(98, 130, 160),rgb(39, 101, 155),rgb(49, 81, 116),rgb(16, 68, 116),rgb(39, 101, 155)); */
+  justify-content: center;
+  display:flex;
+  align-items: center;
 }
-.principal {
-    padding: 20px;
-    text-align: center;
-    width: 1030px;
-    margin: 0 auto;
+:root{
+  --verde: #6AC259;
+  --laranjado: #FFCC29;
+  --rosa: #FFC0CB;
+  --verdePetroleo: #206A5D;
+  --amarelo: #FFF76A;
+  --branco: aliceblue;
 }
 main {
-    width: 1030px;
-    margin: 0 auto;  
+  padding: 0;
+  width: 100%;
 }
-h1 {
-    font-size: 30px;
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.body-inicial{
+  background-color: var(--verde);
+  height: 100vh;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: justify;
-    color:aliceblue;
+.card-pagina{
+  display: flex;
+  background-color: var(--branco);
+  max-width: 90rem;
+  max-height: 1000rem;
+  flex-direction: column;
+  border-style: solid;
+  position: fixed;
+  top:3%;
+  margin: 40px;
+ 
 }
-h2{
-    font-size: 25px;
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+.card-barra{
+  max-width: 84.09rem;
+  height: 3rem;
+  background-color: var(--laranjado);
+  border-bottom: 3px solid;
+  position: relative;
 }
-h3 {
-    font-size: 25px;
-    color: aliceblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
-    display: inline-block;
-    text-align: bottom;
-    font-weight: bold;
-    text-transform: uppercase;
-    vertical-align:text-bottom;
+.circulo{
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  position: relative;
+  background-color: var(--rosa);
+  border: 2px solid;
+  top: 1rem;
+  left: 1rem;
 }
-form {
-    margin: 40px 0;
+
+.circulo::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  position: absolute;
+  background-color: var(--amarelo);
+  border: 2px solid;
+  top: -2px;
+  left: 2rem;
 }
-form label {
-    display: block;
-    font-size: 20px;
-    color:rgb(6, 8, 10);
-    text-align: center;
-    margin: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+.circulo::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  position: absolute;
+  background-color: var(--verde);
+  border: 2px solid;
+  top: -2px;
+  left: 4rem;
 }
-#escolha {
-    font-size: 12px;
-    font-weight: bold;
+.titulo-e-info{
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
 }
-select {
-    background-color: rgb(5, 29, 56);
-   color:aliceblue; 
+.titulo-cifra{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px;
+  font-size: 3.5em;
 }
-.produtos {
-    width: 1030px;
-    margin: 0 auto;
-    padding: 50px 0;
-    text-align: center;
-    
+.infos{
+  background-color: var(--verdePetroleo);
+  color:var(--branco);
+  max-width: 80rem;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 30px;
 }
-.produtos div {
-    display: inline-block;
-    text-align: center;
-    width: 40%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    background: rgb(39, 101, 155);
+/* .div-opcoes{
+  display: block;
+  justify-content: center;
+  flex-direction: column;
+} */
+.div-opcoes {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.texto {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background: rgb(230, 237, 244);
-  border-radius: 5px;
+.cripto, .descripto {
+  margin-top:3rem;
+  flex-direction: row;
+  display: inline-block;
+  padding: 30px 56px;
+  background-color: var(--branco);
+  border-radius: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-weight: bold;
+  
 }
-.icones {
-    border-radius: 50px 50px 50px 50px;
-    margin-top: 0;
-    align: left;
+#cadeado-fechado{
+  color: var(--rosa);
 }
-.enviar {
-    padding: 5px 20%;
-    margin: 10px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border:none;
-    border-radius: 8px;
-    background: rgb(17, 147, 93);
-    transition: 1s backgroud;
-    cursor:pointer;
+#cadeado-aberto{
+  color: var(--laranjado);
 }
-.enviar:hover {
-    background: green;  
+.cripto:hover{
+  background-color: #D1759B;
+  transition: 2s;
 }
-footer {
-    text-align: center;
-    background-color: rgb(116, 116, 129);
-    padding: 40px 0;
+
+.descripto:hover{
+  background-color:#D6AE2D;
+  transition: 2s;
 }
-footer p {
-    text-align: center;
-    font-size: 13px;
-    font-family:'Courier New', Courier, monospace;
-    margin: 20px 0 0;
+
+/* .descripto {
+  flex-direction: row;
+  display: inline-block;
+} */
+
+@media screen and (min-width: 1200px) {
+  .div-opcoes {
+    margin-top: -5rem;
+  }
+}
+@media screen and (min-width: 842px) {
+  .div-opcoes {
+    padding-top: 32rem;
+  }
+}
+@media screen and (min-width: 460px) {
+  .div-opcoes {
+    padding-top: 38rem;
+  }
+  
 }
