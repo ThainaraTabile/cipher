@@ -5,6 +5,7 @@ import telaInicial from './paginas/telaInicial/index.js';
 const main = document.querySelector('#root');
 
 const init = () => {
+    main.innerHTML='';
   switch (window.location.hash) {
     case '':
       main.appendChild(telaInicial());

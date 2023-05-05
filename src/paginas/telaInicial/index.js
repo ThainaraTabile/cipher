@@ -1,10 +1,4 @@
 
-// const telaInicial = () => {
-//   const div = document.createElement('section');
-//   div.classList.add('tela-inicial');
-//   div.textContent = 'Conteúdo da tela inicial';
-//   return div;
-// };
 const telaInicial = () => {
   const container = document.createElement('div');
   const template = `
@@ -28,6 +22,15 @@ const telaInicial = () => {
     
   `;
   container.innerHTML = template;
+
+  const btnCripto = container.querySelector(".cripto");
+  btnCripto.addEventListener('click', () => 
+  window.location.hash='#criptografia'
+  );
+  const btnDescripto = container.querySelector(".descripto");
+  btnDescripto.addEventListener('click', () => 
+    console.log('clicou')
+  );
   return container;
 };
 
