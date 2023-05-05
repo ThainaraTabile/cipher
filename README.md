@@ -41,7 +41,7 @@ Assim, permite que após o processo de criptografia, os usuários possam compart
 
 O processo de criação teve como objetivo principal ofertar ao usuário uma experiência intuitiva, segura e prática.
 
-Visualmente as cores e elementos da interface remetem à tecnologia e segurança da informação, transmitindo ao usuário a sensação de realmente estar vivendo uma experiência segura.
+Visualmente as cores e elementos da interface remetem à tecnologia, transmitindo ao usuário a sensação de realmente estar vivendo uma experiência segura.
 
 * **A interface permite ao usuário:**
   - Eleger um número offset (chave secreta) indicando quantas posições de deslocamento de caracteres quer que a cifra utilize.
