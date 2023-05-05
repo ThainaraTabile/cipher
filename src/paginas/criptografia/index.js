@@ -11,8 +11,8 @@ const criptografia = () => {
     </div>
     <div class".conteudo-cripto">
     <p class="instrucoes">Digite  aqui o texto para criptografar:</p>
-    <textarea id="textoParaCriptografar" class="text-area" name="textoParaCriptografar"> </textarea>
-    <textarea id="texto-criptografado" class="text-area"> </textarea>
+    <textarea id="textoParaCriptografar" class="text-area-cripto" name="textoParaCriptografar"> </textarea>
+    <textarea id="texto-criptografado" class="text-area-cripto"> </textarea>
     
     <p class="instrucoes">Escolha quantas posições você deseja que a cifra desloque e em seguida clique no botão enviar.</p>
     <select id="#deslocaCifra" class="deslocaCifra" required="required">

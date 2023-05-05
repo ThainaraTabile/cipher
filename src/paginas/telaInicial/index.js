@@ -29,7 +29,7 @@ const telaInicial = () => {
   );
   const btnDescripto = container.querySelector(".descripto");
   btnDescripto.addEventListener('click', () => 
-    console.log('clicou')
+  window.location.hash='#descriptografia'
   );
   return container;
 };
