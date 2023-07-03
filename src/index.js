@@ -1,27 +1,3 @@
-i//mport cipher from './cipher.js';
-
-
-// function cifrar() {
-//   const textoCifrar = document.querySelector("#textoParaCriptografar").value.trim();
-//   const offset = document.querySelector("#deslocaCifra").value;
-//   const resultado = cipher.encode(textoCifrar, parseInt(offset));
-//   document.querySelector("#textoCriptografado").innerText = resultado;
-// }
-// const inputCifrar = document.querySelector("#cifrar");
-// inputCifrar.addEventListener("click", cifrar);
-
-// function textoMaiusculo(event) {
-//   const texto = event.target.value
-//   event.target.value = texto.toUpperCase();
-// }
-// document.querySelector("#textoParaCriptografar").addEventListener("input", textoMaiusculo);
-
-// const botaoCopiarC = document.querySelector("#copiarC");
-// botaoCopiarC.addEventListener('click', function () {
-//   const textAreaC = document.querySelector("#textoCriptografado");
-//   textAreaC.select();
-//   navigator.clipboard.writeText(textAreaC.value);
-// });
 
 function decifrar() {
   const textoCifrado = document.querySelector("#textoParaDescriptografar").value.trim();
